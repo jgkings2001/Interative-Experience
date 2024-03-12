@@ -15,7 +15,7 @@ public class ExitGame : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("esc pressed");
+            //Debug.Log("esc pressed");
             Application.Quit();
         }
     }
