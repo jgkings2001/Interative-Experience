@@ -16,9 +16,14 @@ public class HorrorCrash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("boo");
-        GetComponent<AudioSource>().PlayOneShot(horrorHitSound);
+       
 
 
+    } 
+
+    private void OnTriggerEnter(Collider other)
+    {
+         Debug.Log("boo");
+         GetComponent<AudioSource>().PlayOneShot(horrorHitSound);
     }
 }
